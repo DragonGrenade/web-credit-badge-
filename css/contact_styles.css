@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.email_section {
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  padding: 20px 20px; /* Default for mobile */
+}
+
+.email_section p {
+  font-weight: 400;
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
+  letter-spacing: 0.03em;
+}
+
+.email_intro {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+.email_button {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  padding: 10px 80px; /* Default padding for mobile */
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px 0;
+}
+
+.copy_label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: green;
+  margin-top: 5px;
+  display: none;
+}
+
+.bullet_points {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .email_section {
+    padding: 40px 80px;
+  }
+  .email_section p{
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  .email_button {
+    padding: 10px 100px;
+  }
+}
